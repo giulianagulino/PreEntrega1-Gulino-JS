@@ -1,3 +1,6 @@
+setTimeout(() => {
+    console.log("Delayed for 1 second.");
+}, "1000");
 let quiereTaller = prompt("Te interesa alguno de nuestros talleres? Si/No")
 let precioFinal = 0
 let cantidadDeTalleres = 0
@@ -35,7 +38,7 @@ if (quiereTaller == "Si") {
         if (quiereOtroTaller == "Si") {
             continue
         } else {
-            if (cantidadDeTalleres > 1){
+            if (cantidadDeTalleres > 1) {
                 precioFinal = precioFinal * 0.9
             }
             alert("Precio final es: " + precioFinal)
